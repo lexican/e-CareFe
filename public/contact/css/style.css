@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER SECTION */
+.header__section {
+  background: url("../images/headerbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 50px 10px;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.overlay::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 38, 137, 0.27);
+  z-index: -1;
+}
+
+.header__section .header__text {
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header__section .find__doctor {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.header__section .find__doctor a {
+  background: rgba(252, 59, 59, 0.7);
+  border-radius: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 15px;
+}
+
+.header__section .pick__date h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header__section .pick__date a {
+  background: #1d768b;
+  border-radius: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 30px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+/* CONATCT FORM */
+.contact__form {
+  margin-bottom: 40px;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.contact__form .form__field {
+  margin-bottom: 30px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.contact__form .form__field input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #000000;
+}
+
+.contact__form .form__field textarea {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #000000;
+}
+
+.contact__form button {
+  border: none;
+  cursor: pointer;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  margin-left: auto;
+  display: block;
+  background: #fb5b45;
+  border-radius: 5px;
+  outline: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* MAP SECTION */
+.map__section {
+  margin-bottom: 50px;
+  padding: 20px 10px;
+}
+
+.map__section p {
+  line-height: 30px;
+  text-align: center;
+}
+
+.map__section #map {
+  height: 350px;
+  width: 100%;
+}
+
+/* FOOTER SECTION */
+.footer__section {
+  background: #006f76;
+  padding-top: 50px;
+}
+
+.footer__section .footer__header {
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.footer__section h6 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.footer__section .footer__links li {
+  margin-bottom: 15px;
+}
+
+.footer__section .footer__links li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__section .social__links {
+  display: flex;
+  justify-content: start;
+}
+
+.footer__section .social__links li {
+  margin-right: 10%;
+}
+
+.footer__section .social__links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer__section .powered__by p {
+  line-height: normal;
+  margin-bottom: normal;
+  color: #ffffff;
+}
+
+.footer__section .powered__by p img {
+  height: 80px;
+}
+
+.footer__section .copyright {
+  border-top: 1px solid #ffffff;
+  padding: 20px 10px;
+}
+
+.footer__section .copyright p {
+  line-height: normal;
+  margin-bottom: 0;
+  color: #ffffff;
+  text-align: center;
+}
